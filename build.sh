@@ -1,0 +1,1 @@
+docker build -t deliganli/dynu:armv7 .

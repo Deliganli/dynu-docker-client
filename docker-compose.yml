@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  ddns:
+    container_name: dynu
+    image: deliganli/dynu:armv7
+    environment:
+      - DYN_HOSTNAME=${DYN_HOSTNAME}
+      - DYN_USER=${DYN_USER}
+      - DYN_PASS=${DYN_PASS}
+    restart: always
